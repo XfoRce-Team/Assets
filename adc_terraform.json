@@ -1,0 +1,931 @@
+{
+    "results": [
+        {
+            "columns": [
+                "n",
+                "r"
+            ],
+            "data": [
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "Route 53"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 0,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1000,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "0",
+                                "labels": [
+                                    "Route53"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Route 53"                                 
+                                }
+                            },
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "VPC"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "VPC"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1000",
+                                "type": "",
+                                "startNode": "0",
+                                "endNode": "1",
+                                "properties": {}
+                            }
+                        ]                    
+                            }                
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "VPC"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 1,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1001,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "VPC"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "VPC"                                 
+                                }
+                            },
+                            {
+                                "id": "0",
+                                "labels": [
+                                    "Route53"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Route 53"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1001",
+                                "type": "",
+                                "startNode": "1",
+                                "endNode": "0",
+                                "properties": {}
+                            }
+                        ]                    
+                            }                
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "Private Subnet"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 2,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1002,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "2",
+                                "labels": [
+                                    "PrivateSubnet"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Private Subnet"                                 
+                                }
+                            },
+                            {
+                                "id": "1",
+                                "labels": [
+                                    "VPC"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "VPC"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1002",
+                                "type": "",
+                                "startNode": "2",
+                                "endNode": "1",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "Load Balancer"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 3,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1003,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "3",
+                                "labels": [
+                                    "LoadBalancer"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Load Balancer"                                 
+                                }
+                            },
+                            {
+                                "id": "2",
+                                "labels": [
+                                    "PrivateSubnet"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Private Subnet"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1003",
+                                "type": "",
+                                "startNode": "3",
+                                "endNode": "2",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "Security Group"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 4,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1004,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "4",
+                                "labels": [
+                                    "SecurityGroup"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Security Group"                                 
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "labels": [
+                                    "LoadBalancer"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Security Group"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1004",
+                                "type": "",
+                                "startNode": "4",
+                                "endNode": "3",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "Lambda"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 5,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1005,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "5",
+                                "labels": [
+                                    "Lambda"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Lambda"                                 
+                                }
+                            },
+                            {
+                                "id": "4",
+                                "labels": [
+                                    "SecurityGroup"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Security Group"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1005",
+                                "type": "",
+                                "startNode": "5",
+                                "endNode": "4",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "Lambda"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 5,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1006,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "5",
+                                "labels": [
+                                    "Lambda"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Lambda"                                 
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "labels": [
+                                    "LoadBalancer"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Load Balancer"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1006",
+                                "type": "",
+                                "startNode": "5",
+                                "endNode": "3",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "EC2A"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 6,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1007,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "6",
+                                "labels": [
+                                    "EC2A"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "EC2 A"                                 
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "labels": [
+                                    "LoadBalancer"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Load Balancer"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1007",
+                                "type": "",
+                                "startNode": "6",
+                                "endNode": "3",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "EC2B"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 7,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1008,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "7",
+                                "labels": [
+                                    "EC2B"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "EC2 B"                                 
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "labels": [
+                                    "LoadBalancer"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Load Balancer"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1008",
+                                "type": "",
+                                "startNode": "6",
+                                "endNode": "3",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "EC2B"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 7,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1009,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "8",
+                                "labels": [
+                                    "EC2C"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "EC2 C"                                 
+                                }
+                            },
+                            {
+                                "id": "3",
+                                "labels": [
+                                    "LoadBalancer"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Load Balancer"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1009",
+                                "type": "",
+                                "startNode": "6",
+                                "endNode": "3",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "SecurityGroup"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 9,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1010,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "9",
+                                "labels": [
+                                    "SecurityGroup"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Security Group"                                 
+                                }
+                            },
+                            {
+                                "id": "6",
+                                "labels": [
+                                    "EC2A"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "EC2 A"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1010",
+                                "type": "",
+                                "startNode": "9",
+                                "endNode": "6",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "SecurityGroup"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 9,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1011,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "9",
+                                "labels": [
+                                    "SecurityGroup"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Security Group"                                 
+                                }
+                            },
+                            {
+                                "id": "7",
+                                "labels": [
+                                    "EC2B"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "EC2 B"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1011",
+                                "type": "",
+                                "startNode": "9",
+                                "endNode": "7",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "SecurityGroup"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 9,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1012,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "9",
+                                "labels": [
+                                    "SecurityGroup"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Security Group"                                 
+                                }
+                            },
+                            {
+                                "id": "8",
+                                "labels": [
+                                    "EC2C"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "EC2 C"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1012",
+                                "type": "",
+                                "startNode": "9",
+                                "endNode": "8",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "DynamoDB"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 10,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1013,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "10",
+                                "labels": [
+                                    "DynamoDB"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Dynamo DB"                                 
+                                }
+                            },
+                            {
+                                "id": "9",
+                                "labels": [
+                                    "SecurityGroup"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Security Group"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1013",
+                                "type": "",
+                                "startNode": "10",
+                                "endNode": "9",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "DynamoDB"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 10,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1014,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "10",
+                                "labels": [
+                                    "DynamoDB"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Dynamo DB"                                 
+                                }
+                            },
+                            {
+                                "id": "6",
+                                "labels": [
+                                    "EC2A"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "EC2 A"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1014",
+                                "type": "",
+                                "startNode": "10",
+                                "endNode": "6",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "DynamoDB"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 10,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1015,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "10",
+                                "labels": [
+                                    "DynamoDB"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Dynamo DB"                                 
+                                }
+                            },
+                            {
+                                "id": "8",
+                                "labels": [
+                                    "EC2C"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "EC2 C"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1015",
+                                "type": "",
+                                "startNode": "10",
+                                "endNode": "8",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "SecurityGroup"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 11,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1016,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "11",
+                                "labels": [
+                                    "SecurityGroup"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Security Group"                                 
+                                }
+                            },
+                            {
+                                "id": "10",
+                                "labels": [
+                                    "DynamoDB"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Dynamo DB"                            
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1016",
+                                "type": "",
+                                "startNode": "11",
+                                "endNode": "10",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                },
+                {
+                    "row": [
+                        {
+                            "NM_LGL": "PrivateSubnet"                            
+                        },
+                        {}
+                    ],
+                    "meta": [
+                        {
+                            "id": 12,
+                            "type": "node",
+                            "deleted": false
+                        },
+                        {
+                            "id": 1017,
+                            "type": "relationship",
+                            "deleted": false
+                        }
+                    ],
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "12",
+                                "labels": [
+                                    "PrivateSubnet"
+                                ],
+                                "properties": {   
+                                    "NM_LGL": "Private Subnet"                                 
+                                }
+                            }     ,
+                            {
+                                "id": "10",
+                                "labels": [
+                                    "DynamoDB"
+                                ],
+                                "properties": {
+                                    "NM_LGL": "Dynamo DB"                            
+                                }
+                            }                       
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1017",
+                                "type": "",
+                                "startNode": "12",
+                                "endNode": "10",
+                                "properties": {}
+                            }
+                        ]                    
+                }
+                }
+            ]
+        }
+    ],
+    "errors": []
+}
